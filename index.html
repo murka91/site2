@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="app.js"></script>
+    <title>Престиж</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro">Престиж</div>
+    
+                
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="test.html">О комплексе</a>
+                    <a class="nav__link" href="#cat">Каталог квартир</a>
+                    <a class="nav__link" href="#footer">Контакты</a>
+                    <a class="nav__link" href="tel:+7(908)-317-79-63" target="_blank">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>+7-(900)787-23-21</a>
+                </nav>
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header> 
+    <div class="page">
+ <!-- Intro -->
+ <div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Каталог квартир</h1> <br>
+            <a class="btn" href="#">Записаться на консультацию</a>
+        </div>
+    </div>  
+</div><!-- /.intro -->
+<!-- О НАС -->
+<section class="section" id="#">
+    <div style="margin-top: 70px;" class="container">
+    
+        <div class="section__header">
+            <h2 style="color: #284B63;" class="section__title">Каталог квартир</h2>
+        </div>
+        <div class="card">
+            <section class="blocks-container">
+                <div class="block block-text">
+                  <h2>Начните свое путешествие к новому дому уже сегодня, изучив наш всеобъемлющий каталог квартир!</h2>
+                  <hr style="width: 75px; color: #284B63;  border: 1px solid #284B63; position: relative;left: 210px;">
+                  <p style="color: #284B63;">Каталог квартир на нашем сайте предоставляет вам широкий выбор недвижимости, чтобы найти идеальное жилье для вас. Мы предлагаем квартиры различных размеров, планировок и ценовых категорий</p>         
+                </div>
+                <div class="block block-image">
+                  <img src="2.png" alt="Image 1">
+                </div>
+                <div class="block block-image">
+                  <img src="3.png" alt="Image 2">
+                </div>
+                <div class="block block-image">
+                  <img src="4.png" alt="Image 3">
+                </div>     
+    </div>
+    </div><!-- /.container -->
+    </section>
+    <div class="container">
+        <section  class="apartments-catalog" id="#cat">
+            <div class="container">
+                <h1>Фильтр квартир</h1>
+                <div class="filters">
+                    <div class="filter-options">
+                        <label class="filter-btn">
+                            <input type="radio" name="filter" data-filter="all" checked>
+                            <span>Все квартиры</span>
+                        </label>
+                        <label class="filter-btn">
+                            <input type="radio" name="filter" data-filter="1-room">
+                            <span>1-комнатная</span>
+                        </label>
+                        <label class="filter-btn">
+                            <input type="radio" name="filter" data-filter="2-rooms">
+                            <span>2-комнатная</span>
+                        </label>
+                        <label class="filter-btn">
+                            <input type="radio" name="filter" data-filter="3-rooms">
+                            <span>3-комнатная</span>
+                        </label>
+                        <label class="filter-btn">
+                            <input type="radio" name="filter" data-filter="studio">
+                            <span>Студия</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="apartments-grid">
+                    <!-- Apartments will be dynamically inserted here -->
+                </div>
+            </div>
+            </div>
+          </section>
+         <!-- О НАС -->
+         <section style="margin-top : 70px; ;" class="section_footer" id="#footer">
+            <div class="container">
+              <div class="section__headerr">
+                <h2 style="color: #fff;" class="section__title">Получить консультацию</h2>
+                <div class="section__text">
+                  <p style="color: #fff;">Введите свой номер телефона  и наш менеджер свяжется с Вами</p>
+                </div>
+              </div>
+              <form action="#">
+                  <input type="text" id="name" name="name" placeholder="Имя фамилия" required>
+                  <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                  <input type="submit" value="Отправить">
+                  <p style="color: #fff; text-align: center;">Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</p>
+              </form>
+              <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73186.7855965395!2d73.39704311394259!3d55.02416674764039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aaff3e7f430719%3A0xd6355947f5cc7f4c!2z0JMuINCT0YDQvtC30L3Ri9C5!5e0!3m2!1sru!2sru!4v1716719117906!5m2!1sru!2sru" width="1050" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+            <!-- /.container -->
+          </section>
+          <!-- О НАС -->
+          <script>
+            const apartments = [
+                {
+                    id: 1,
+                    type: "1-room",
+                    rooms: 1,
+                    area: 45,
+                    price:  3400210,
+                    image: "5.png"
+                },
+                {
+                    id: 2,
+                    type: "2-rooms",
+                    rooms: 2,
+                    area: 65,
+                    price:  3400210,
+                    image: "6.png"
+                },
+                {
+                    id: 3,
+                    type: "2-rooms",
+                    rooms: 2,
+                    area: 70,
+                    price:  3400210,
+                    image: "7.png"
+                },
+                {
+                    id: 4,
+                    type: "3-rooms",
+                    rooms: 3,
+                    area: 90,
+                    price:  3400210,
+                    image: "8.png"
+                },
+                {
+                    id: 5,
+                    type: "studio",
+                    rooms: 1,
+                    area: 35,
+                    price:  3400210,
+                    image: "9.png"
+                },
+                {
+                    id: 6,
+                    type: "1-room",
+                    rooms: 1,
+                    area: 40,
+                    price:  3400210,
+                    image: "10.png"
+                },
+                {
+                    id: 7,
+                    type: "2-rooms",
+                    rooms: 2,
+                    area: 75,
+                    price:  3400210,
+                    image: "11.png"
+                },
+                {
+                    id: 8,
+                    type: "3-rooms",
+                    rooms: 3,
+                    area: 95,
+                    price:  3400210,
+                    image: "12.png"
+                },
+                {
+                    id: 9,
+                    type: "studio",
+                    rooms: 1,
+                    area: 30,
+                    price:  3400210,
+                    image: "13.png"
+                },
+                {
+                    id: 10,
+                    type: "1-room",
+                    rooms: 1,
+                    area: 50,
+                    price:  3400210,
+                    image: "14.png"
+                },
+                {
+                    id: 11,
+                    type: "2-rooms",
+                    rooms: 2,
+                    area: 80,
+                    price:  3400210,
+                    image: "15.png"
+                },
+                {
+                    id: 12,
+                    type: "3-rooms",
+                    rooms: 3,
+                    area: 100,
+                    price:  3400210,
+                    image: "16.png"
+                },
+                {
+                    id: 13,
+                    type: "studio",
+                    rooms: 1,
+                    area: 28,
+                    price:  3400210,
+                    image: "17.png"
+                },
+                {
+                    id: 14,
+                    type: "1-room",
+                    rooms: 1,
+                    area: 42,
+                    price: 3400210,
+                    image: "18.png"
+                },
+                {
+                    id: 15,
+                    type: "2-rooms",
+                    rooms: 2,
+                    area: 72,
+                    price:  3400210,
+                    image: "19.png"
+                },
+                {
+                    id: 16,
+                    type: "3-rooms",
+                    rooms: 3,
+                    area: 105,
+                    price:  3400210,
+                    image: "20.png"
+                }
+            ];
+            
+            const apartmentsGrid = document.querySelector(".apartments-grid");
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            
+            function displayApartments(filteredApartments) {
+                apartmentsGrid.innerHTML = "";
+                filteredApartments.forEach(apartment => {
+                    const apartmentElement = document.createElement("div");
+                    apartmentElement.classList.add("apartment-card", apartment.type);
+                    apartmentElement.addEventListener("click", () => {
+                        window.location.href = `apartment.html?id=${apartment.id}`;
+                    });
+                    apartmentElement.innerHTML = `
+                        <img src="${apartment.image}" alt="Apartment Image">
+                        <h3>Квартира № ${apartment.id}</h3>
+                        <p>${apartment.rooms} комнат, ${apartment.area} м²</p>
+                        <p>Цена: ₽${apartment.price}</p>
+                    `;
+                    apartmentsGrid.appendChild(apartmentElement);
+                });
+            }
+            
+            function filterApartments(filter) {
+                if (filter === "all") {
+                    return apartments;
+                } else {
+                    return apartments.filter(apartment => apartment.type === filter);
+                }
+            }
+            
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const filter = button.querySelector("input").dataset.filter;
+                    filterButtons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+                    const filteredApartments = filterApartments(filter);
+                    displayApartments(filteredApartments);
+                });
+            });
+            
+            // Display all apartments initially
+            displayApartments(apartments);
+              </script>
+
+        
+            <footer>
+                <div class="footer-content">
+                  <div class="footer-section about">
+                    <h2>Престиж</h2>
+                    <p>Жилой комплекс</p>
+                  </div>
+                  <div class="footer-section links">
+                    <ul>
+                      <li><a href="#">О комплексе</a></li>
+                      <li><a href="#">Район</a></li>
+                      <li><a href="#">Каталог квартир</a></li>
+                      <li><a href="#">Ипотека</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section contact">
+                    <div class="contact-info">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Адрес: Проспект Карла Маркса, 40</span>
+                    </div>
+                    <div class="contact-info">
+                      <i class="fas fa-phone"></i>
+                      <span>Телефон: 7-(900)787-23-21</span>
+                    </div>
+                    <div class="contact-info">
+                      <i class="fas fa-envelope"></i>
+                      <span>E-mail: prestig@mail.ru</span>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+        </footer>
+          </div>
+
+</div>
+</body>
+</html>
